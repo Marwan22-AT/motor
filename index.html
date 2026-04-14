@@ -1,0 +1,362 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>أكاديمية المستقبل | Future Academy</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;600;700;800&family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <!-- Navbar -->
+    <nav class="navbar">
+        <div class="container">
+            <div class="logo">
+                <i class="fas fa-graduation-cap"></i>
+                <span data-ar="أكاديمية المستقبل" data-en="Future Academy">أكاديمية المستقبل</span>
+            </div>
+            <ul class="nav-links">
+                <li><a href="#home" data-ar="الرئيسية" data-en="Home">الرئيسية</a></li>
+                <li><a href="#courses" data-ar="الكورسات" data-en="Courses">الكورسات</a></li>
+                <li><a href="#about" data-ar="من نحن" data-en="About">من نحن</a></li>
+                <li><a href="#contact" data-ar="تواصل معنا" data-en="Contact">تواصل معنا</a></li>
+            </ul>
+            <div class="nav-actions">
+                <button class="lang-toggle" onclick="toggleLanguage()">
+                    <i class="fas fa-globe"></i>
+                    <span id="lang-text">English</span>
+                </button>
+                <button class="mobile-menu" onclick="toggleMobileMenu()">
+                    <i class="fas fa-bars"></i>
+                </button>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="hero-bg"></div>
+        <div class="container">
+            <div class="hero-content">
+                <h1 data-ar="طور مهاراتك الرقمية مع خبراء المجال" data-en="Develop Your Digital Skills with Industry Experts">
+                    طور مهاراتك الرقمية مع خبراء المجال
+                </h1>
+                <p data-ar="انضم إلى آلاف المتعلمين وابدأ رحلتك نحو الاحتراف في التسويق الرقمي، صناعة المحتوى، تطوير الألعاب، والمزيد" 
+                   data-en="Join thousands of learners and start your journey to mastery in Digital Marketing, Content Creation, Game Development, and more">
+                    انضم إلى آلاف المتعلمين وابدأ رحلتك نحو الاحتراف في التسويق الرقمي، صناعة المحتوى، تطوير الألعاب، والمزيد
+                </p>
+                <div class="hero-buttons">
+                    <a href="#courses" class="btn btn-primary" data-ar="استكشف الكورسات" data-en="Explore Courses">استكشف الكورسات</a>
+                    <a href="#about" class="btn btn-secondary" data-ar="اعرف المزيد" data-en="Learn More">اعرف المزيد</a>
+                </div>
+            </div>
+            <div class="hero-stats">
+                <div class="stat">
+                    <i class="fas fa-users"></i>
+                    <h3>10,000+</h3>
+                    <span data-ar="طالب" data-en="Students">طالب</span>
+                </div>
+                <div class="stat">
+                    <i class="fas fa-book-open"></i>
+                    <h3>50+</h3>
+                    <span data-ar="كورس" data-en="Courses">كورس</span>
+                </div>
+                <div class="stat">
+                    <i class="fas fa-star"></i>
+                    <h3>4.9</h3>
+                    <span data-ar="تقييم" data-en="Rating">تقييم</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Courses Section -->
+    <section id="courses" class="courses">
+        <div class="container">
+            <div class="section-header">
+                <h2 data-ar="كورساتنا" data-en="Our Courses">كورساتنا</h2>
+                <p data-ar="اختر مسارك التعليمي وابدأ رحلة التعلم" data-en="Choose your learning path and start your journey">اختر مسارك التعليمي وابدأ رحلة التعلم</p>
+            </div>
+            
+            <div class="courses-grid">
+                <!-- Digital Marketing -->
+                <div class="course-card">
+                    <div class="course-image">
+                        <i class="fas fa-bullhorn"></i>
+                        <div class="course-badge" data-ar="الأكثر طلباً" data-en="Most Popular">الأكثر طلباً</div>
+                    </div>
+                    <div class="course-content">
+                        <h3 data-ar="التسويق الرقمي" data-en="Digital Marketing">التسويق الرقمي</h3>
+                        <p data-ar="تعلم استراتيجيات التسويق عبر وسائل التواصل الاجتماعي، SEO، الإعلانات الممولة، وتحليل البيانات" 
+                           data-en="Learn social media marketing strategies, SEO, paid advertising, and data analytics">
+                            تعلم استراتيجيات التسويق عبر وسائل التواصل الاجتماعي، SEO، الإعلانات الممولة، وتحليل البيانات
+                        </p>
+                        <div class="course-meta">
+                            <span><i class="fas fa-clock"></i> 40 ساعة</span>
+                            <span><i class="fas fa-signal"></i> <span data-ar="مبتدئ إلى متقدم" data-en="Beginner to Advanced">مبتدئ إلى متقدم</span></span>
+                        </div>
+                        <div class="course-footer">
+                            <span class="price">$49.99</span>
+                            <button class="btn btn-small" data-ar="سجل الآن" data-en="Enroll Now">سجل الآن</button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Digital Creator -->
+                <div class="course-card">
+                    <div class="course-image">
+                        <i class="fas fa-video"></i>
+                    </div>
+                    <div class="course-content">
+                        <h3 data-ar="صناعة المحتوى الرقمي" data-en="Digital Content Creation">صناعة المحتوى الرقمي</h3>
+                        <p data-ar="أتقن إنتاج الفيديو، التصوير، المونتاج، كتابة السكريبت، وبناء علامتك الشخصية" 
+                           data-en="Master video production, photography, editing, scriptwriting, and building your personal brand">
+                            أتقن إنتاج الفيديو، التصوير، المونتاج، كتابة السكريبت، وبناء علامتك الشخصية
+                        </p>
+                        <div class="course-meta">
+                            <span><i class="fas fa-clock"></i> 35 ساعة</span>
+                            <span><i class="fas fa-signal"></i> <span data-ar="جميع المستويات" data-en="All Levels">جميع المستويات</span></span>
+                        </div>
+                        <div class="course-footer">
+                            <span class="price">$39.99</span>
+                            <button class="btn btn-small" data-ar="سجل الآن" data-en="Enroll Now">سجل الآن</button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Game Development -->
+                <div class="course-card">
+                    <div class="course-image">
+                        <i class="fas fa-code"></i>
+                    </div>
+                    <div class="course-content">
+                        <h3 data-ar="تطوير الألعاب" data-en="Game Development">تطوير الألعاب</h3>
+                        <p data-ar="تعلم برمجة الألعاب باستخدام Unity وUnreal Engine، C#، C++، وتطوير ألعاب الجوال" 
+                           data-en="Learn game programming with Unity and Unreal Engine, C#, C++, and mobile game development">
+                            تعلم برمجة الألعاب باستخدام Unity وUnreal Engine، C#، C++، وتطوير ألعاب الجوال
+                        </p>
+                        <div class="course-meta">
+                            <span><i class="fas fa-clock"></i> 60 ساعة</span>
+                            <span><i class="fas fa-signal"></i> <span data-ar="متوسط إلى متقدم" data-en="Intermediate to Advanced">متوسط إلى متقدم</span></span>
+                        </div>
+                        <div class="course-footer">
+                            <span class="price">$79.99</span>
+                            <button class="btn btn-small" data-ar="سجل الآن" data-en="Enroll Now">سجل الآن</button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Game Design -->
+                <div class="course-card">
+                    <div class="course-image">
+                        <i class="fas fa-pencil-ruler"></i>
+                    </div>
+                    <div class="course-content">
+                        <h3 data-ar="تصميم الألعاب" data-en="Game Design">تصميم الألعاب</h3>
+                        <p data-ar="تعلم ميكانيكيات اللعب، تصميم المستويات، سرد القصص، وتجربة المستخدم في الألعاب" 
+                           data-en="Learn game mechanics, level design, storytelling, and user experience in games">
+                            تعلم ميكانيكيات اللعب، تصميم المستويات، سرد القصص، وتجربة المستخدم في الألعاب
+                        </p>
+                        <div class="course-meta">
+                            <span><i class="fas fa-clock"></i> 45 ساعة</span>
+                            <span><i class="fas fa-signal"></i> <span data-ar="مبتدئ إلى متوسط" data-en="Beginner to Intermediate">مبتدئ إلى متوسط</span></span>
+                        </div>
+                        <div class="course-footer">
+                            <span class="price">$59.99</span>
+                            <button class="btn btn-small" data-ar="سجل الآن" data-en="Enroll Now">سجل الآن</button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Animation -->
+                <div class="course-card">
+                    <div class="course-image">
+                        <i class="fas fa-film"></i>
+                        <div class="course-badge new" data-ar="جديد" data-en="New">جديد</div>
+                    </div>
+                    <div class="course-content">
+                        <h3 data-ar="الرسوم المتحركة" data-en="Animation">الرسوم المتحركة</h3>
+                        <p data-ar="أتقن الرسوم المتحركة ثنائية وثلاثية الأبعاد باستخدام Blender، Maya، After Effects" 
+                           data-en="Master 2D and 3D animation using Blender, Maya, and After Effects">
+                            أتقن الرسوم المتحركة ثنائية وثلاثية الأبعاد باستخدام Blender، Maya، After Effects
+                        </p>
+                        <div class="course-meta">
+                            <span><i class="fas fa-clock"></i> 55 ساعة</span>
+                            <span><i class="fas fa-signal"></i> <span data-ar="جميع المستويات" data-en="All Levels">جميع المستويات</span></span>
+                        </div>
+                        <div class="course-footer">
+                            <span class="price">$69.99</span>
+                            <button class="btn btn-small" data-ar="سجل الآن" data-en="Enroll Now">سجل الآن</button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Bundle -->
+                <div class="course-card featured">
+                    <div class="course-image">
+                        <i class="fas fa-crown"></i>
+                    </div>
+                    <div class="course-content">
+                        <h3 data-ar="الباقة الشاملة" data-en="Complete Bundle">الباقة الشاملة</h3>
+                        <p data-ar="احصل على جميع الكورسات مع خصم 40% وشهادات معتمدة + مشاريع عملية" 
+                           data-en="Get all courses with 40% discount, certified certificates + practical projects">
+                            احصل على جميع الكورسات مع خصم 40% وشهادات معتمدة + مشاريع عملية
+                        </p>
+                        <div class="course-meta">
+                            <span><i class="fas fa-infinity"></i> <span data-ar="وصول مدى الحياة" data-en="Lifetime Access">وصول مدى الحياة</span></span>
+                            <span><i class="fas fa-certificate"></i> <span data-ar="5 شهادات" data-en="5 Certificates">5 شهادات</span></span>
+                        </div>
+                        <div class="course-footer">
+                            <span class="price"><del>$299</del> $179</span>
+                            <button class="btn btn-small btn-gold" data-ar="احصل على العرض" data-en="Get Offer">احصل على العرض</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Features Section -->
+    <section class="features">
+        <div class="container">
+            <div class="section-header">
+                <h2 data-ar="لماذا تختارنا؟" data-en="Why Choose Us?">لماذا تختارنا؟</h2>
+            </div>
+            <div class="features-grid">
+                <div class="feature">
+                    <i class="fas fa-chalkboard-teacher"></i>
+                    <h3 data-ar="مدربون خبراء" data-en="Expert Instructors">مدربون خبراء</h3>
+                    <p data-ar="تعلم من متخصصين ذوي خبرة عملية في كبرى الشركات" data-en="Learn from specialists with practical experience in major companies">تعلم من متخصصين ذوي خبرة عملية في كبرى الشركات</p>
+                </div>
+                <div class="feature">
+                    <i class="fas fa-project-diagram"></i>
+                    <h3 data-ar="مشاريع عملية" data-en="Practical Projects">مشاريع عملية</h3>
+                    <p data-ar="طبق ما تتعلمه على مشاريع واقعية لبناء محفظة أعمال قوية" data-en="Apply what you learn to real projects to build a strong portfolio">طبق ما تتعلمه على مشاريع واقعية لبناء محفظة أعمال قوية</p>
+                </div>
+                <div class="feature">
+                    <i class="fas fa-certificate"></i>
+                    <h3 data-ar="شهادات معتمدة" data-en="Certified Certificates">شهادات معتمدة</h3>
+                    <p data-ar="احصل على شهادات معترف بها عالمياً تعزز فرصك الوظيفية" data-en="Get globally recognized certificates to boost your career">احصل على شهادات معترف بها عالمياً تعزز فرصك الوظيفية</p>
+                </div>
+                <div class="feature">
+                    <i class="fas fa-headset"></i>
+                    <h3 data-ar="دعم مستمر" data-en="Continuous Support">دعم مستمر</h3>
+                    <p data-ar="فريق دعم متاح على مدار الساعة للإجابة على استفساراتك" data-en="Support team available 24/7 to answer your questions">فريق دعم متاح على مدار الساعة للإجابة على استفساراتك</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about">
+        <div class="container">
+            <div class="about-content">
+                <div class="about-text">
+                    <h2 data-ar="نحن نبني المستقبل الرقمي" data-en="We Build the Digital Future">نحن نبني المستقبل الرقمي</h2>
+                    <p data-ar="أكاديمية المستقبل هي منصة تعليمية رائدة تهدف إلى تطوير الكوادر العربية في المجالات الرقمية المستقبلية. نؤمن بأن التعليم الجيد هو مفتاح النجاح في عصر التحول الرقمي." 
+                       data-en="Future Academy is a leading educational platform aimed at developing Arab talent in future digital fields. We believe quality education is the key to success in the digital transformation era.">
+                        أكاديمية المستقبل هي منصة تعليمية رائدة تهدف إلى تطوير الكوادر العربية في المجالات الرقمية المستقبلية. نؤمن بأن التعليم الجيد هو مفتاح النجاح في عصر التحول الرقمي.
+                    </p>
+                    <ul class="about-list">
+                        <li><i class="fas fa-check-circle"></i> <span data-ar="منهجية تعليمية حديثة" data-en="Modern Teaching Methodology">منهجية تعليمية حديثة</span></li>
+                        <li><i class="fas fa-check-circle"></i> <span data-ar="محتوى متجدد باستمرار" data-en="Constantly Updated Content">محتوى متجدد باستمرار</span></li>
+                        <li><i class="fas fa-check-circle"></i> <span data-ar="مجتمع تفاعلي من المتعلمين" data-en="Interactive Learners Community">مجتمع تفاعلي من المتعلمين</span></li>
+                    </ul>
+                </div>
+                <div class="about-image">
+                    <div class="about-img-placeholder">
+                        <i class="fas fa-graduation-cap"></i>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+        <div class="container">
+            <div class="section-header">
+                <h2 data-ar="تواصل معنا" data-en="Contact Us">تواصل معنا</h2>
+                <p data-ar="لديك سؤال؟ نحن هنا لمساعدتك" data-en="Have a question? We're here to help">لديك سؤال؟ نحن هنا لمساعدتك</p>
+            </div>
+            <div class="contact-content">
+                <form class="contact-form">
+                    <div class="form-group">
+                        <input type="text" placeholder="الاسم / Name" required>
+                    </div>
+                    <div class="form-group">
+                        <input type="email" placeholder="البريد الإلكتروني / Email" required>
+                    </div>
+                    <div class="form-group">
+                        <select>
+                            <option value="" data-ar="اختر الموضوع" data-en="Select Subject">اختر الموضوع</option>
+                            <option value="course" data-ar="استفسار عن كورس" data-en="Course Inquiry">استفسار عن كورس</option>
+                            <option value="support" data-ar="دعم فني" data-en="Technical Support">دعم فني</option>
+                            <option value="business" data-ar="شراكات تجارية" data-en="Business Partnerships">شراكات تجارية</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <textarea rows="5" placeholder="رسالتك / Your Message" required></textarea>
+                    </div>
+                    <button type="submit" class="btn btn-primary btn-full" data-ar="إرسال الرسالة" data-en="Send Message">إرسال الرسالة</button>
+                </form>
+                <div class="contact-info">
+                    <div class="info-item">
+                        <i class="fas fa-envelope"></i>
+                        <span>info@futureacademy.com</span>
+                    </div>
+                    <div class="info-item">
+                        <i class="fas fa-phone"></i>
+                        <span>+20 123 456 7890</span>
+                    </div>
+                    <div class="info-item">
+                        <i class="fas fa-map-marker-alt"></i>
+                        <span data-ar="القاهرة، مصر" data-en="Cairo, Egypt">القاهرة، مصر</span>
+                    </div>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                        <a href="#"><i class="fab fa-youtube"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h4 data-ar="أكاديمية المستقبل" data-en="Future Academy">أكاديمية المستقبل</h4>
+                    <p data-ar="منصتك الأولى للتعلم الرقمي الاحترافي" data-en="Your first platform for professional digital learning">منصتك الأولى للتعلم الرقمي الاحترافي</p>
+                </div>
+                <div class="footer-section">
+                    <h4 data-ar="روابط سريعة" data-en="Quick Links">روابط سريعة</h4>
+                    <ul>
+                        <li><a href="#courses" data-ar="الكورسات" data-en="Courses">الكورسات</a></li>
+                        <li><a href="#about" data-ar="من نحن" data-en="About Us">من نحن</a></li>
+                        <li><a href="#" data-ar="الشروط والأحكام" data-en="Terms & Conditions">الشروط والأحكام</a></li>
+                        <li><a href="#" data-ar="سياسة الخصوصية" data-en="Privacy Policy">سياسة الخصوصية</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4 data-ar="النشرة البريدية" data-en="Newsletter">النشرة البريدية</h4>
+                    <form class="newsletter">
+                        <input type="email" placeholder="بريدك الإلكتروني / Your Email">
+                        <button type="submit"><i class="fas fa-paper-plane"></i></button>
+                    </form>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 Future Academy. <span data-ar="جميع الحقوق محفوظة" data-en="All Rights Reserved">جميع الحقوق محفوظة</span>.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/main.js"></script>
+</body>
+</html>
